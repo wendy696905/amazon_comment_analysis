@@ -12,3 +12,9 @@ sum_len = 0
 for d in comment:
 	sum_len = sum_len + len(d)
 print('The average quantity of the characters in the comment are', sum_len / len(comment))
+
+new = []
+for d in comment:
+	if len(d) < 100:
+		new.append(d)
+print('There are', len(new), 'comments contain less than 100 characters.')
